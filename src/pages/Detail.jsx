@@ -108,6 +108,26 @@ export default function Detail({ item }) {
         </section>
       )}
 
+      {/* SCREENS — the same split the playable demo uses, for titles that do
+          not have one. Nothing else on the page moves. */}
+      {!Demo && !!item.shots?.images?.length && (
+        <section className="section" id="screens">
+          <div className="wrap play-split">
+            <div className="play-copy">
+              <span className="eyebrow">{item.shots.eyebrow}</span>
+              <h2 className="section-title">{item.shots.title}</h2>
+              <p className="section-sub">{item.shots.sub}</p>
+              {item.shots.note && <p className="play-note">{item.shots.note}</p>}
+            </div>
+            <div className="shots-wrap">
+              {item.shots.images.map((img) => (
+                <img key={img.src} className="shot" src={img.src} alt={img.alt} loading="lazy" />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ABOUT */}
       {!!item.about?.length && (
         <section className="section">

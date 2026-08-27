@@ -338,6 +338,17 @@ export const GAMES = [
       ],
       note: 'Hints are free and unlimited \u2014 there is no currency in this game and nothing to buy. The only cost is that no-signal cases switch them off entirely.',
     },
+    shots: {
+      eyebrow: 'The device',
+      title: 'A phone that is not yours.',
+      sub: 'Captured on hardware. The case list, the lock screen and the app grid \u2014 a fictional OS rendered as a phosphor CRT, scanlines and all.',
+      note: 'Every screen you see is somebody else\u2019s. That is the whole game.',
+      images: [
+        { src: '/assets/phone-escape-shot1.png', alt: 'The case list, with five difficulty sets' },
+        { src: '/assets/phone-escape-shot3.png', alt: 'A locked case, counting down' },
+        { src: '/assets/phone-escape-shot2.png', alt: 'The expert set' },
+      ],
+    },
     meta: { publisher: 'Arcadly', releaseDate: '2026', platform: 'Android', genre: 'Escape Room' },
     playStoreUrl: null,
     privacyUrl: 'https://arcadly-sky-hopper.vercel.app/phone-escape-privacy.html',
