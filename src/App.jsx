@@ -26,6 +26,9 @@ const NAV = [
 ];
 
 const liveGame = GAMES.find((g) => g.playStoreUrl);
+// Counted, not written out: the sentence under the games grid used to say
+// "four in active development" and went stale the moment a game was added.
+const LIVE_COUNT = GAMES.filter((g) => g.playStoreUrl).length;
 
 const RAIL_SECTIONS = [
   { id: 'analytics', label: 'Analytics' },
@@ -214,8 +217,8 @@ function Home() {
             from our lab.
           </h2>
           <p className="section-sub">
-            {GAMES.length} games in the catalogue — one live on Google Play, four in active
-            development.
+            {GAMES.length} games in the catalogue — {LIVE_COUNT} live on Google Play,{' '}
+            {GAMES.length - LIVE_COUNT} in active development.
           </p>
           <Stagger className="games-grid">
             {GAMES.map((g) => (

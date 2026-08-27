@@ -276,6 +276,72 @@ export const GAMES = [
     playStoreUrl: null,
     privacyUrl: null,
   },
+
+  {
+    id: 'phone-escape',
+    title: 'Phone Escape',
+    heroTitle: 'PHONE ESCAPE',
+    heroSub: "Somebody Else's Phone",
+    category: 'Puzzle',
+    genre: 'Escape Room',
+    status: 'soon',
+    statusLabel: 'Coming soon',
+    phase: 'In testing',
+    progress: 90,
+    icon: '/assets/phone-escape-512.png',
+    accent: '#22c55e',
+    tagline: 'Crack a stranger\u2019s phone before the timer runs out.',
+    description:
+      'A locked screen and a countdown. The messages, photographs, notes and browser history all belong to someone else \u2014 and one of them is the code that gets you out.',
+    tags: ['Mystery', 'Offline'],
+    statTiles: [
+      { value: '71', label: 'Cases' },
+      { value: '5', label: 'Difficulty sets' },
+      { value: '0', label: 'Ads' },
+      { value: '0', label: 'Permissions' },
+    ],
+    about: [
+      'Phone Escape is an escape room that fits inside a handset. You are handed a phone that is not yours, running a fictional OS rendered as a green-phosphor CRT, and every app on it \u2014 messages, contacts, gallery, notes, files, browser, voicemail \u2014 is evidence.',
+      'Every code is derived, never guessed. Cases are built answer-first: the chain of evidence is chosen before a word of prose is written, so a solution always exists and is always reachable from what is actually on screen. A name on a contact card, a frame missing from a photo sequence, a page somebody visited twice.',
+      'Seventy-one cases ship across five sets \u2014 a handwritten story campaign plus fifteen each of easy, medium, hard and expert. A new Daily Mystery is generated from the date, so everyone plays the same one, and a share code hands a friend the exact same phone.',
+      'Nothing leaves the device. There are no adverts, no analytics, no accounts, and the Android build requests no permissions at all. Even the sound is synthesised on the phone rather than shipped as audio files.',
+    ],
+    features: [
+      { title: 'Deduction, Not Guessing', body: 'Every answer is derived from evidence on the phone. Built answer-first, so a solution always exists.' },
+      { title: 'The Clock Bites', body: 'A wrong answer costs 30 seconds. Three on one lock starts a 60-second device wipe.' },
+      { title: 'A Daily Mystery', body: 'Generated from the date, so everyone gets the same phone on the same day.' },
+      { title: 'Zero Permissions', body: 'No ads, no analytics, no accounts. The app asks Android for nothing.' },
+    ],
+    howItPlays: [
+      { n: '01', title: 'Read the brief', body: 'An unknown number tells you what you are looking for. Everything else you work out yourself.' },
+      { n: '02', title: 'Search the apps', body: 'Messages, gallery, notes, files, browser history. Opening one lock plants evidence in another app \u2014 the phone tells you where.' },
+      { n: '03', title: 'Enter the code', body: 'Keypad, password, pattern or putting events back in order. Get it wrong and the clock pays for it.' },
+    ],
+    extra: {
+      eyebrow: 'The difficulty',
+      title: 'Five sets, one curve.',
+      sub: 'A handwritten campaign to learn the language, then four generated tiers that keep escalating. Expert cases carry a fourth lock and run under device conditions that take something away from you.',
+      items: [
+        { label: 'Story', value: '11', body: 'Handwritten cases, each with its own mystery and voice.' },
+        { label: 'Easy \u2192 Hard', value: '45', body: 'Fifteen each, generated and verified solvable before shipping.' },
+        { label: 'Expert', value: '15', body: 'Four locks instead of three, and the exit is hidden behind a second locked note.' },
+        { label: 'Conditions', value: '3', body: 'A flat battery cuts the clock, a cracked screen obscures it, no signal takes hints away.' },
+      ],
+    },
+    ads: {
+      eyebrow: 'When you get stuck',
+      title: 'A way out, always.',
+      items: [
+        { label: 'Hints', body: 'Authored nudges that lead you toward the reasoning rather than handing over the answer.' },
+        { label: 'The last one tells you', body: 'Every lock ends with its answer. Being stuck with no way out is worse than being told.' },
+        { label: 'Case file', body: 'Evidence you uncover is filed permanently and carried into later cases.' },
+      ],
+      note: 'Hints are free and unlimited \u2014 there is no currency in this game and nothing to buy. The only cost is that no-signal cases switch them off entirely.',
+    },
+    meta: { publisher: 'Arcadly', releaseDate: '2026', platform: 'Android', genre: 'Escape Room' },
+    playStoreUrl: null,
+    privacyUrl: 'https://arcadly-sky-hopper.vercel.app/phone-escape-privacy.html',
+  },
 ];
 
 export const getGame = (id) => GAMES.find((g) => g.id === id);
