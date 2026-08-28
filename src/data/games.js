@@ -298,19 +298,19 @@ export const GAMES = [
       { value: '71', label: 'Cases' },
       { value: '5', label: 'Difficulty sets' },
       { value: '0', label: 'Ads' },
-      { value: '0', label: 'Permissions' },
+      { value: '0', label: 'Purchases' },
     ],
     about: [
       'Phone Escape is an escape room that fits inside a handset. You are handed a phone that is not yours, running a fictional OS rendered as a green-phosphor CRT, and every app on it \u2014 messages, contacts, gallery, notes, files, browser, voicemail \u2014 is evidence.',
       'Every code is derived, never guessed. Cases are built answer-first: the chain of evidence is chosen before a word of prose is written, so a solution always exists and is always reachable from what is actually on screen. A name on a contact card, a frame missing from a photo sequence, a page somebody visited twice.',
       'Seventy-one cases ship across five sets \u2014 a handwritten story campaign plus fifteen each of easy, medium, hard and expert. A new Daily Mystery is generated from the date, so everyone plays the same one, and a share code hands a friend the exact same phone.',
-      'Nothing leaves the device. There are no adverts, no analytics, no accounts, and the Android build requests no permissions at all. Even the sound is synthesised on the phone rather than shipped as audio files.',
+      'There are no adverts, no in-app purchases and no accounts, and your progress never leaves the phone. The build does send anonymous crash and usage data so the game can be fixed when it breaks — what that covers is set out in the privacy policy. Even the sound is synthesised on the device rather than shipped as audio files.',
     ],
     features: [
       { title: 'Deduction, Not Guessing', body: 'Every answer is derived from evidence on the phone. Built answer-first, so a solution always exists.' },
       { title: 'The Clock Bites', body: 'A wrong answer costs 30 seconds. Three on one lock starts a 60-second device wipe.' },
       { title: 'A Daily Mystery', body: 'Generated from the date, so everyone gets the same phone on the same day.' },
-      { title: 'Zero Permissions', body: 'No ads, no analytics, no accounts. The app asks Android for nothing.' },
+      { title: 'No Adverts', body: 'No ads, no purchases, no accounts. Nothing interrupts a run, ever.' },
     ],
     howItPlays: [
       { n: '01', title: 'Read the brief', body: 'An unknown number tells you what you are looking for. Everything else you work out yourself.' },
